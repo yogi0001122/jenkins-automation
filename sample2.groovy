@@ -15,6 +15,7 @@ pipeline {
         echo "Will deploy to ${params.environment_name}"
       }
     }
+  }
     stage('Loading environment config') {
       steps {
         script {
