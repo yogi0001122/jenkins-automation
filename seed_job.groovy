@@ -1,4 +1,4 @@
-def baseFolderName = 'dev'
+def baseFolderName = "${branchName}"
 def defaultRepo = 'jenkins-automation'
 def defaultGitUrl = 'github.com'
 def defaultBranch = 'master'
