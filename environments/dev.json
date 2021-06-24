@@ -1,0 +1,9 @@
+{
+    "env": {
+        "github": {
+            "url": "https://github.com/yogi0001122/DevOps.git",
+            "branch": "master",
+            "credentials_id": "git-user"
+        }
+    }
+}
