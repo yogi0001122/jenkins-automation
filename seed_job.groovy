@@ -23,9 +23,9 @@ def jobs = [
 
 
 // Create the base folder for all the jobs
-folder(baseFolderName) {
-  description("Dev, jobs")
-}
+//folder(baseFolderName) {
+  //description("Dev, jobs")
+//}
 
 // These jobs are generate by the array at the top
 
@@ -41,7 +41,7 @@ jobs.each { job, jobConfig ->
   int jobNumArtifacts = jobConfig.numberOfArtifacts ?: defaultNumArtifacts
   String jobGroovy = jobConfig.groovyFile ?: job + ".groovy"
 
-  pipelineJob('/' +  jobBaseFolder + '/' + job) {
+    pipelineJob('/' +  "${BRANCH_NAME}" + '/' + job) {
     description("These job are for Dev")
 
     definition {
