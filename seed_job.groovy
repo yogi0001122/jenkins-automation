@@ -41,7 +41,7 @@ jobs.each { job, jobConfig ->
   int jobNumArtifacts = jobConfig.numberOfArtifacts ?: defaultNumArtifacts
   String jobGroovy = jobConfig.groovyFile ?: job + ".groovy"
 
-    pipelineJob('/' +  "${BRANCH_NAME}" + '/' + job) {
+    pipelineJob('/' +  "\${BRANCH_NAME}" + '/' + job) {
     description("These job are for Dev")
 
     definition {
