@@ -1,4 +1,4 @@
-def baseFolderName = build.environment.get("BRANCH_NAME")
+def baseFolderName = binding.variables.get("BRANCH_NAME")
 def defaultRepo = 'jenkins-automation'
 def defaultGitUrl = 'github.com'
 def defaultBranch = 'master'
