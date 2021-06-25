@@ -1,5 +1,4 @@
-def env = System.getenv()
-def baseFolderName = env["BRANCH_NAME"]
+def baseFolderName = build.environment.get("BRANCH_NAME")
 def defaultRepo = 'jenkins-automation'
 def defaultGitUrl = 'github.com'
 def defaultBranch = 'master'
